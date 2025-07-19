@@ -1,6 +1,4 @@
-if(point_distance(self.x, self.y, mouse_x, mouse_y) <= self.movement_speed) {
-	self.x = mouse_x;
-	self.y = mouse_y;
-} else {
-	move_towards_point(mouse_x, mouse_y, self.movement_speed);
-}
+if keyboard_check(ord("W")) { self.y = self.y - self.movement_speed;}
+if keyboard_check(ord("A")) { self.x = self.x - self.movement_speed;}
+if keyboard_check(ord("S")) { self.y = self.y + self.movement_speed;}
+if keyboard_check(ord("D")) { self.x = self.x + self.movement_speed;}
