@@ -1,1 +1,1 @@
-self.movement_speed = 10;
+self.movement_speed = 5;

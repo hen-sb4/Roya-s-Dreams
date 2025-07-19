@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_floor",
+  "%Name":"ent_bullet",
   "eventList":[],
   "managed":true,
-  "name":"obj_floor",
+  "name":"ent_bullet",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
-  "persistent":true,
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -28,12 +28,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_floor",
-    "path":"sprites/spr_floor/spr_floor.yy",
+    "name":"spr_bullet",
+    "path":"sprites/spr_bullet/spr_bullet.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_floor",
-    "path":"sprites/spr_floor/spr_floor.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }
