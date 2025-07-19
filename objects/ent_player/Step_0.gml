@@ -5,6 +5,12 @@ if keyboard_check(ord("S")) { self.y = self.y + self.movement_speed;}
 if keyboard_check(ord("D")) { self.x = self.x + self.movement_speed;}
 
 // botão para atirar
-if keyboard_check(vk_space) {
-	instance_create_depth(self.x, self.y, self.depth + 1, ent_bullet);
+if (keyboard_check(vk_space) && can_fire) {
+	var now = get_timer();
+	if (keyboard_check(vk_space)) {
+	    if (now - last_fire_time >= fire_delay) {
+	        instance_create_depth(x, y, depth + 1, ent_bullet);
+	        last_fire_time = now;
+	    }
+	}
 }
