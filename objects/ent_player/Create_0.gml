@@ -1,13 +1,8 @@
 event_inherited();
 
-can_fire = true;
-fire_delay = 250000;
-last_fire_time = -fire_delay;
-my_time_source = time_source_create(
-    time_source_game,
-    1.0,
-    time_source_units_seconds,
-    function(_paused) { }
-);
+self.friendly = true;
+
+self.shots_per_second = 4;
+self.last_shot_time = 0;
 
 self.movement_speed = 5;
