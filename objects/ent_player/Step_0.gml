@@ -1,5 +1,3 @@
-event_inherited();
-
 // movimentação WASD
 if keyboard_check(ord("W")) { self.y = self.y - self.movement_speed;}
 if keyboard_check(ord("A")) { self.x = self.x - self.movement_speed;}
